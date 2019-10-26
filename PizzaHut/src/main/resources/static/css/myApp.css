@@ -1,0 +1,1074 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**********************************************************************
+    set icon inside textbox
+******************************************************************************/
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/***********************************************************************/
+#searchBtn{
+    background-color: #fff;
+    width: 20px;
+    cursor: pointer;
+}
+
+.searchBox
+{
+    padding: 0 16px;
+    border: 0;
+    outline: 0 none;
+    font-size: 14px;
+   
+    
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+.sticky-footer {
+  flex-shrink: none;
+}
+
+
+html{
+	height:100%;
+}
+body
+{
+    line-height: 20px !important;    
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    font-size: 16px;
+    letter-spacing: .1px;
+    
+ 
+}
+
+
+.navbarGradient{
+    background: linear-gradient(to left,blue,purple);
+    background-size:800% 800%;
+    animation: abc 10s infinite reverse  linear;
+    -webkit-animation: abc 10s infinite reverse  linear;
+    height: 55px;
+    font-weight: 520;
+}
+
+@keyframes abc
+{
+        0%{background-position:0% 50%;}
+		50%{background-position:100% 50%;}
+		100%{background-position:0% 50%;}
+}
+
+.btn-google
+{
+    background-color:#dd4b39;
+    color: white;
+}
+
+.btn-facebook{
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn:hover
+{
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+}
+.btn-google:hover
+{
+    background-color: #dd4b39;
+    color: white;
+}
+
+.user .fa-facebook-f
+{
+    font-size: 16px;
+}
+.user .fa-google-plus-g
+{
+    font-size: 16px;
+}
+
+.social-media .fa-google-plus-g
+{
+    background: #dd4b39;
+    color: white;
+    font-size: 25px;
+}
+.social-media .fa-facebook-f
+{
+    background: #3B5998;
+    color: white;
+    font-size: 25px;
+  
+}
+.social-media .fa-twitter
+{
+    background: #55ACEE;
+    color: white;
+}
+.social-media .fa-linkedin-in
+{
+    background: #007bb5;
+    color: white;
+}
+.btn-facebook:hover
+{
+    background-color: #3b5998;
+    color: white;   
+}
+
+.user
+{
+    font-size:.8rem;
+    border-radius:10rem;
+    padding:.75rem 1rem;
+    -webkit-border-radius:10rem;
+    -moz-border-radius:10rem;
+    -ms-border-radius:10rem;
+    -o-border-radius:10rem;
+}
+.bg-image
+{
+    background-image: url(../images/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+ 
+}
+
+#loading
+{
+    width:100%;
+    height:100vh;
+    background: #fff url(../images/3059.gif) no-repeat center;
+    position: fixed;
+    background-size: cover;
+    z-index: 99999;
+    transition:all 10s ease;
+    -webkit-transition:all 10s ease;
+    -moz-transition:all 10s ease;
+    -ms-transition:all 10s ease;
+    -o-transition:all 10s ease;
+}
+
+
+.btn-login
+{
+    font-family: Verdana;
+}
+.form-user
+{
+    font-size:.8rem;
+    border-radius:10rem;
+    padding:1.5rem 1rem;
+    -webkit-border-radius:10rem;
+    -moz-border-radius:10rem;
+    -ms-border-radius:10rem;
+    -o-border-radius:10rem;
+}
+.modal
+{
+    overflow:auto;
+}
+.modal-bg
+{
+    background-image:url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-dialog
+{
+    box-shadow: 2px 2px 7px 3px white;
+    border: white;
+}
+
+.bg-login
+{
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px 1px white;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.close-login
+{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+
+}
+.modal-dialog-register
+{
+    box-shadow: 0px 0px 7px 0px honeydew;
+    border: none;
+}
+
+.account
+{
+    text-shadow: 0px 0px 7px 5px gold;
+}
+.close-reg
+{
+    position: absolute;
+    top: -43px;
+    right: -55px;
+}
+
+.login-eye
+{
+    position: absolute;
+    left: 86%;
+    top:33%;
+    cursor: pointer;
+    color:dodgerblue;
+}
+
+.register-eye
+{
+    position: absolute;
+    left: 80%;
+    top:37%;
+    cursor: pointer;
+    color:dodgerblue;
+}
+
+
+.category
+{
+    box-shadow:0px 0px 7px 3px gray;
+    left:10px;
+    height: 100%;
+}
+
+.dropdown
+{
+    width: 100%;
+    content: " ";
+}
+
+.dropdown::after 
+ {
+    position: absolute;
+    left:50%;
+    top:85%;
+    display: inline-block;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid white;
+    border-left: 9px solid transparent;
+    content: '';
+}
+
+.dropdown-menu
+{
+    font-size: 0.9em;
+}
+.dropdown-title li.active a
+{
+    background: transparent;
+}
+.popover{
+    max-width: 100%;
+    text-decoration: none;
+}
+ a:hover
+{
+    text-decoration: none;
+}
+
+.popover-content
+{
+    font-size: 0.3em;
+
+}
+
+
+
+
+
+
+.btn-floating
+{
+    padding: 15px;
+    font-size: 22px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:100%;
+    -o-border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -ms-border-radius:100%;
+    text-shadow: 1px 1px 2px black,2px 2px 25px gray, 1px 1px 5px white;
+    
+}
+
+
+
+
+.social-media .fab:hover
+{
+    box-shadow: 0px 3px  7px gray;
+    animation: spinner 5s infinite linear;
+    -webkit-animation: spinner 5s infinite linear;
+}
+
+@keyframes spinner
+{
+    from {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+}
+      to {
+        transform: rotateY(-360deg);
+        -webkit-transform: rotateY(-360deg);
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        -o-transform: rotateY(-360deg);
+}
+}
+
+
+.social-media .fab:not(:hover)
+{
+    transform:rotate(-360deg) scale(1.0);
+    transition: all 1s ease-in-out ;
+    -webkit-transition: all 1s ease-in-out ;
+    -moz-transition: all 1s ease-in-out ;
+    -ms-transition: all 1s ease-in-out ;
+    -o-transition: all 1s ease-in-out ;
+    -webkit-transform:rotate(-360deg) scale(1.0);
+    -moz-transform:rotate(-360deg) scale(1.0);
+    -ms-transform:rotate(-360deg) scale(1.0);
+    -o-transform:rotate(-360deg) scale(1.0);
+}
+
+
+
+.box-carousel
+{
+            box-shadow: 0px 0px 7px 3px gray;
+            margin-left: 5px;
+}
+.prev
+{
+    cursor: pointer;
+    position:absolute;
+    background-size: 15px !important;
+    background-color: white;
+    width: 50px;
+    height:100px;
+    left:0px;
+    opacity: 1;
+    padding:20px;
+    top:30%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.next
+{
+    cursor: pointer;
+    position: absolute;
+    background-size: 15px !important;
+    background-color: white !important;
+    width: 50px;
+    height:100px;
+    top:30%;
+    right: 0px;
+    opacity: 1;
+    padding:10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+.bg-Card{
+    border-radius:10px;
+    margin-left:4%;
+    margin-right: 5%;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    box-shadow :0px 0px 7px 5px  gray;
+    background: white;
+}
+
+.bg-backGradient
+{
+    color:rgb(255, 240, 32);
+    background: linear-gradient(to  bottom,rgb(255, 240, 32),white);
+    
+}
+
+
+.card >img:hover
+{
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        cursor: pointer;
+}
+
+
+/************************************************
+
+    About us page
+**************************************************/
+
+.imageBorder img
+{
+    width: 200px;
+
+}
+/*
+    C://Users/Reception/Desktop/back1.jpg
+*/
+  
+/***********************************************************************
+                All Mega dropdwon here
+***********************************************************************/
+
+
+
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white; 
+}  
+
+.footerContent 
+{
+    padding-top: 20px;
+    
+}
+.footerContent .social-media ul li a
+{
+    margin: auto;
+    display: inline-block;
+  position: relative;
+    padding: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color:white;
+    
+}
+
+
+/**********************************************************************/
+/*  All @media code */
+@media (max-width: 575.98px) { 
+    .MyNavbar
+ {
+     border-top: none;
+         
+ }
+
+ .searchBox{
+     width:40px;
+ }
+.MyNavbar li{
+    top:50px;
+}
+.MyNavbar li a
+{
+    position: relative;
+    align-content: center;
+    background-color:white;
+    color:darkblue;
+    width: 100%;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+
+.MyNavbar li a:hover
+{
+   background-color: dodgerblue;
+    box-shadow: 0px 0px 7px 3px gray;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    
+}
+.MyNavbar li.active a
+{
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    background: linear-gradient(130deg,purple,blue);
+    color:white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**********************************************************************
+    set icon inside textbox
+******************************************************************************/
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/***********************************************************************/
+#searchBtn{
+    background-color: #fff;
+    width: 20px;
+    cursor: pointer;
+}
+
+.searchBox
+{
+    padding: 0 16px;
+    border: 0;
+    outline: 0 none;
+    font-size: 14px;
+   
+    
+}
+
+/* body
+{
+    line-height: 15px !important;
+    font-family: Roboto,Arial,sans-serif;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    height: 100%;
+    font-size: 16px;
+    letter-spacing: .1px;
+    
+ 
+} */
+
+
+.navbarGradient{
+    background: linear-gradient(to left,blue,purple);
+    background-size:800% 800%;
+    animation: abc 10s infinite reverse  linear;
+    -webkit-animation: abc 10s infinite reverse  linear;
+    height: 55px;
+    font-weight: 520;
+}
+
+@keyframes abc
+{
+        0%{background-position:0% 50%;}
+		50%{background-position:100% 50%;}
+		100%{background-position:0% 50%;}
+}
+
+.btn-google
+{
+    background-color:#dd4b39;
+    color: white;
+}
+
+.btn-facebook{
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn:hover
+{
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+}
+.btn-google:hover
+{
+    background-color: #dd4b39;
+    color: white;
+}
+
+.fa-facebook-f
+{
+    font-size: 16px;
+}
+.fa-google-plus-g
+{
+    font-size: 16px;
+}
+
+
+.btn-facebook:hover
+{
+    background-color: #3b5998;
+    color: white;   
+}
+
+.user
+{
+    font-size:.8rem;
+    border-radius:10rem;
+    padding:.75rem 1rem;
+    -webkit-border-radius:10rem;
+    -moz-border-radius:10rem;
+    -ms-border-radius:10rem;
+    -o-border-radius:10rem;
+}
+.bg-image
+{
+    background-image: url(../images/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+ 
+}
+.btn-login
+{
+    font-family: Verdana;
+}
+.form-user
+{
+    font-size:.8rem;
+    border-radius:10rem;
+    padding:1.5rem 1rem;
+    -webkit-border-radius:10rem;
+    -moz-border-radius:10rem;
+    -ms-border-radius:10rem;
+    -o-border-radius:10rem;
+}
+.modal
+{
+    overflow:auto;
+}
+.modal-bg
+{
+    background-image:url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-dialog
+{
+    box-shadow: 2px 2px 7px 3px white;
+    border: white;
+}
+
+.bg-login
+{
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px 1px white;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.close-login
+{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+
+}
+.modal-dialog-register
+{
+    box-shadow: 0px 0px 7px 0px honeydew;
+    border: none;
+}
+
+.account
+{
+    text-shadow: 0px 0px 7px 5px gold;
+}
+.close-reg
+{
+    position: absolute;
+    top: -43px;
+    right: -55px;
+}
+
+.login-eye
+{
+    position: absolute;
+    left: 86%;
+    top:33%;
+    cursor: pointer;
+    color:dodgerblue;
+}
+
+.register-eye
+{
+    position: absolute;
+    left: 80%;
+    top:37%;
+    cursor: pointer;
+    color:dodgerblue;
+}
+
+.btn-rounded
+{
+	border-radius:5rem;
+	box-shadow:0px 0px 5px 2px gray;
+}
+
+.category
+{
+    box-shadow:0px 0px 7px 3px gray;
+    left:10px;
+    height: 100%;
+}
+.category li a
+{
+    color:darkblue;
+}
+
+.category li a:hover
+{
+    box-shadow: 0px 0px 7px 3px gray;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+.category li.active a
+{
+   
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    background: linear-gradient(130deg,purple,blue);
+    color:white;
+}
+
+.dropdown
+{
+    width: 100%;
+}
+.dropdown-menu
+{
+    font-size: 0.9em;
+}
+.dropdown-title li.active a
+{
+    background: transparent;
+}
+.popover{
+    max-width: 100%;
+}
+
+.popover-content
+{
+    font-size: 0.3em;
+}
+  
+  .custom-popover li {
+    border: none!important;
+    text-align: center;
+    overflow: auto;
+  }
+  .custom-popover li:hover
+  {
+      cursor: pointer;
+      color: white;
+      background: rgb(131, 131, 219);
+      border-radius: 5rem  ;
+      -webkit-border-radius: 5rem  ;
+      -moz-border-radius: 5rem  ;
+      -ms-border-radius: 5rem  ;
+      -o-border-radius: 5rem  ;
+}
+
+
+
+.custom-popover li 
+{
+    line-height: 10px;    
+}
+
+.custom-popover li a:hover
+{
+    
+    color:white;
+    text-decoration: none;
+}
+
+.custom-popover li.active a
+  {
+        line-height: 10px;
+      background: linear-gradient(130deg,blue,purple);
+      border-radius: 5rem  ;
+      -webkit-border-radius: 5rem  ;
+      -moz-border-radius: 5rem  ;
+      -ms-border-radius: 5rem  ;
+      -o-border-radius: 5rem  ;
+}
+.carousel
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+#carImage
+{
+    height: 250px;
+    width: 100% !important;
+    padding: 0px;
+
+}
+
+
+.box-carousel
+{
+            box-shadow: 0px 0px 7px 3px gray;
+            margin-left: 5px;
+}
+.prev
+{
+    cursor: pointer;
+    position:absolute;
+    background-size: 15px !important;
+    background-color: white;
+    width: 50px;
+    height:100px;
+    left:0px;
+    opacity: 1;
+    padding:20px;
+    top:30%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.next
+{
+    cursor: pointer;
+    position: absolute;
+    background-size: 15px !important;
+    background-color: white !important;
+    width: 50px;
+    height:100px;
+    top:30%;
+    right: 0px;
+    opacity: 1;
+    padding:10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.product-slide{
+    margin-top: 3% !important;
+    background-color:white;
+    box-shadow: 0px 0px 7px 3px gray;
+    height: 50vh !important;
+}
+
+
+.imagesContent
+{
+    margin-top: 10%;
+    
+}
+
+.mainImageBody
+{
+       padding: 0;
+       margin: 0;
+}
+
+.bg-Card{
+    border-radius:10px;
+    margin-left:4%;
+    margin-right: 5%;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    box-shadow: 0px 0px 7px 5px  gray;
+    background: white;
+}
+.card
+{
+    width: 114%;
+    border: none;
+    
+    border-right: 1px solid gray;
+}
+.card-body{
+    border-bottom: 1px solid gray;
+    
+}
+
+.bg-backGradient
+{
+    color:rgb(255, 240, 32);
+    background: linear-gradient(to  bottom,rgb(255, 240, 32),white);
+    
+}
+.card > img
+{
+    padding-top: 10px;
+}
+
+.card >img:hover
+{
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        cursor: pointer;
+}
+.bg-Card > .col-lg-2
+{
+    padding-left: 0px !important;
+}
+
+
+
+.product-header-slider
+{
+
+        margin-bottom: 1%;
+        margin-left: 5%;
+        margin-right: 5%;
+}
+#btn-View
+{
+    float: right;
+}
+.prevoius
+{
+    top: 50% !important;
+}
+/*
+    C://Users/Reception/Desktop/back1.jpg
+*/
+  
+/***********************************************************************
+                All Mega dropdwon here
+***********************************************************************/
+
+
+
+#pop li a:hover{
+    display: block;
+}
+.dropNavBar
+{
+    margin: 0;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 1px 0px 0px 3px 7px gray;
+}
+
+
+.dropNavBar 
+{
+    color: black;
+    margin: 0px;
+}
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white; 
+}  
+
+.footerContent 
+{
+    padding-top: 20px;
+    
+}
+.footerContent .social-media ul li a
+{
+    margin: auto;
+    display: inline-block;
+  position: relative;
+    padding: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color:white;
+    
+}
+
+.shadow
+{
+	box-shadow:0px 0px 5px 3px gray;
+}
+//cart css
+
+
+
