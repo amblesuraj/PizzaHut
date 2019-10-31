@@ -97,7 +97,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 			.and()
 			.exceptionHandling().accessDeniedPage("/dashboard/accessDenied");
 		}
-		
+		@Bean
 		public PersistentTokenRepository persistentTokenRepository()
 		{
 			JdbcTokenRepositoryImpl jdbcTokenRepositoryImpl = new JdbcTokenRepositoryImpl();
